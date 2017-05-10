@@ -33,6 +33,12 @@ public class PessoaTeste {
 	}
 	
 	@Test
+	public void testeSetIdade(){
+		pessoa.setIdade(26);
+		assertEquals(pessoa.getIdade(),26);
+	}
+	
+	@Test
 	public void testeSetNome() {
 		pessoa.setNome("Miguel");
 		assertEquals(pessoa.getNome(), "Miguel");
