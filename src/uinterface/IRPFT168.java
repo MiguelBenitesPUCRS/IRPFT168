@@ -155,9 +155,10 @@ public class IRPFT168 extends JFrame {
 		textContribuicao.addFocusListener(new FocusAdapter() {
 			@Override
 			public void focusLost(FocusEvent e) {
-				double valor;
-				valor = Double.valueOf(textContribuicao.getText());
-				textContribuicao.setText(new DecimalFormat("R$ #,##0.00").format(valor));
+				//double valor;
+				//valor = Double.valueOf(textContribuicao.getText());
+				//Mexer aki esta gerando erro no lostFocus
+				textContribuicao.setText(new DecimalFormat("R$ #,##0.00").format(textContribuicao.getText()));
 			}
 			@Override
 			public void focusGained(FocusEvent e) {
