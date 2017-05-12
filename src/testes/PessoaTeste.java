@@ -73,5 +73,9 @@ public class PessoaTeste {
 		assertEquals(32000.0,pessoa.getTotalRend(),0.01);
 	}
 	
+	@Test
+	public void testeToStringPessoa(){
+		//Pessoa [nome=Ana, cpf=12345678, idade=65, numDep=6, contriPrev=200.0, totalRend=12000.0] 0.0
+	}
 	
 }

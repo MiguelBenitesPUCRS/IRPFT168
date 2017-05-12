@@ -3,7 +3,7 @@ package business;
 public class Irpf {
 
 	
-	//Declaração de imposto Simplificada...
+	//Declaracao de imposto Simplificada...
 	public double declaracaoSimplicada(Pessoa pessoa) {
 		double baseCalculo = (pessoa.getTotalRend() - pessoa.getContriPrev());
 		double vlrDesconto = ((baseCalculo * 5.0) / 100);
@@ -17,7 +17,7 @@ public class Irpf {
 		}
 	}
 	
-	//Declaração de imposto Completa...
+	//Declaracao de imposto Completa...
 	public double declaracaoCompleta(Pessoa pessoa) {
 		double baseCalculo = (pessoa.getTotalRend() - pessoa.getContriPrev());
 		double vlrDesconto;

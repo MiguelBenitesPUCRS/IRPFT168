@@ -22,7 +22,7 @@ public class IrpfTeste {
 		double ir;
 		Irpf irpf = new Irpf();
 		ir = irpf.declaracaoSimplicada(p1);
-		//Declaração simplificada o assert é 2282.5, o retorno é em ir, e a flutuação 0.01
+		//Declaracao simplificada, o Assert eh 2282.5, o retorno eh em ir, e a flutuacao 0.01
 		assertEquals(2282.5,ir,0.01);											
 	}
 	
