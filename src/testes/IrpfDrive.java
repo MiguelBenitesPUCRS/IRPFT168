@@ -11,10 +11,11 @@ public class IrpfDrive {
 		// TODO Auto-generated method stub	
 		Pessoa p1 = new Pessoa("Ana", "12345678",10);
 		
-		p1.setContriPrev(200);
-		p1.setTotalRend(12000);
-		p1.setIdade(65);
-		p1.setNumDep(6);
+		p1.setContriPrev(1500.0);
+		p1.setTotalRend(35500.0);
+		p1.setIdade(10);
+		p1.setNumDep(0);
+		
 		System.out.println(p1);
 		
 		irpf = new Irpf();

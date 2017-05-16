@@ -2,6 +2,10 @@ package business;
 
 public class Irpf {
 
+	static double FAIXA_A     = 12000;
+	static double FAIXA_B_IN  = 12001;
+	static double FAIXA_B_OUT = 24000;
+	static double FAIXA_C     = 24001;
 	
 	//Declaracao de imposto Simplificada...
 	public double declaracaoSimplicada(Pessoa pessoa) {
@@ -13,7 +17,8 @@ public class Irpf {
 		} else if (baseCalculo > 12000 && baseCalculo < 24000) {
 			return (((baseCalculo - 12000) * 15.0) / 100);
 		} else {
-			return (((baseCalculo - 24000) * 27.5) / 100);
+			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
+			return ((((12000) * 15.0) / 100) + (((baseCalculo - 24000) * 27.5) / 100));
 		}
 	}
 	
@@ -57,7 +62,8 @@ public class Irpf {
 		} else if (baseCalculo > 12000 && baseCalculo < 24000) {
 			return (((baseCalculo - 12000) * 15.0) / 100);
 		} else {
-			return (((baseCalculo - 24000) * 27.5) / 100);
+			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
+			return ((((12000) * 15.0) / 100) + (((baseCalculo - 24000) * 27.5) / 100));
 		}
 	}
 }
