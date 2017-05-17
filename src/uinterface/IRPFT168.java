@@ -92,25 +92,25 @@ public class IRPFT168 extends JFrame {
 		contentPane.add(spiDependentes);
 
 		JLabel lblNewLabel = new JLabel("Nome:");
-		lblNewLabel.setBounds(12, 46, 114, 15);
+		lblNewLabel.setBounds(12, 46, 152, 15);
 		contentPane.add(lblNewLabel);
 
 		JLabel lblCpf = new JLabel("CPF:");
-		lblCpf.setBounds(12, 77, 114, 15);
+		lblCpf.setBounds(12, 77, 152, 15);
 		contentPane.add(lblCpf);
 
 		JLabel lblIdade = new JLabel("Idade:");
-		lblIdade.setBounds(12, 108, 114, 15);
+		lblIdade.setBounds(12, 108, 152, 15);
 		contentPane.add(lblIdade);
 
 		JLabel lblNDependentes = new JLabel("N.º Dependentes:");
-		lblNDependentes.setBounds(12, 139, 141, 15);
+		lblNDependentes.setBounds(12, 139, 152, 15);
 		contentPane.add(lblNDependentes);
 		double contribuicao;
 
-		JLabel label = new JLabel("Contribuição Assis:");
-		label.setBounds(12, 171, 141, 15);
-		contentPane.add(label);
+		JLabel lblContribuicaoAssis = new JLabel("Contribuicao Assis:");
+		lblContribuicaoAssis.setBounds(12, 171, 220, 15);
+		contentPane.add(lblContribuicaoAssis);
 		double valor;
 
 		JLabel lblContribuioAssis = new JLabel("Total dos Rendimentos:");
@@ -118,7 +118,7 @@ public class IRPFT168 extends JFrame {
 		contentPane.add(lblContribuioAssis);
 
 		JLabel lblImpostoPagar = new JLabel("Imposto A Pagar:");
-		lblImpostoPagar.setBounds(12, 302, 141, 15);
+		lblImpostoPagar.setBounds(12, 302, 152, 15);
 		contentPane.add(lblImpostoPagar);
 
 		JRadioButton rdbtnSim = new JRadioButton("Simplificada");
