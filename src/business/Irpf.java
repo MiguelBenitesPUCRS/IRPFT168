@@ -2,24 +2,22 @@ package business;
 
 public class Irpf {
 
-	static double FAIXA_A     = 12000;
-	static double FAIXA_B_IN  = 12001;
-	static double FAIXA_B_OUT = 24000;
-	static double FAIXA_C     = 24001;
+	static double FAIXA_A = 12000; //Ate 12000 Isento, entre 12001 e 24000 15% 
+	static double FAIXA_B = 24000; //Acima de 24000 27,5%
 	
 	//Declaracao de imposto Simplificada...
-	public double declaracaoSimplicada(Pessoa pessoa) {
+	public double declaracaoSimplificada(Pessoa pessoa) {
 		double baseCalculo = (pessoa.getTotalRend() - pessoa.getContriPrev());
 		double vlrDesconto = ((baseCalculo * 5.0) / 100);
 		baseCalculo = baseCalculo - vlrDesconto;
-		if (baseCalculo <= 12000) {
+		if (baseCalculo <= FAIXA_A) {
 			return 0.0;
-		} else if (baseCalculo > 12000 && baseCalculo < 24000) {
-			return (((baseCalculo - 12000) * 15.0) / 100);
+		} else if (baseCalculo > FAIXA_A && baseCalculo < FAIXA_B) {
+			return (((baseCalculo - FAIXA_A) * 15.0) / 100);
 		} else {
 			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
-			return ((((12000) * 15.0) / 100) + (((baseCalculo - 24000) * 27.5) / 100));
-		}
+			return ((((FAIXA_A) * 15.0) / 100) + (((baseCalculo - FAIXA_B) * 27.5) / 100));
+		} 
 	}
 	
 	//Declaracao de imposto Completa...
@@ -57,13 +55,13 @@ public class Irpf {
 				baseCalculo = baseCalculo - vlrDesconto;
 			}
 		}
-		if (baseCalculo <= 12000) {
+		if (baseCalculo <= FAIXA_A) {
 			return 0.0;
-		} else if (baseCalculo > 12000 && baseCalculo < 24000) {
-			return (((baseCalculo - 12000) * 15.0) / 100);
+		} else if (baseCalculo > FAIXA_A && baseCalculo < FAIXA_B) {
+			return (((baseCalculo - FAIXA_A) * 15.0) / 100);
 		} else {
 			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
-			return ((((12000) * 15.0) / 100) + (((baseCalculo - 24000) * 27.5) / 100));
+			return ((((FAIXA_A) * 15.0) / 100) + (((baseCalculo - FAIXA_B) * 27.5) / 100));
 		}
 	}
 }

@@ -21,7 +21,7 @@ public class IrpfTeste {
 	public void testaDeclaracaoSimplicada(){
 		double ir;
 		Irpf irpf = new Irpf();
-		ir = irpf.declaracaoSimplicada(p1);
+		ir = irpf.declaracaoSimplificada(p1);
 		//Declaracao simplificada, o Assert eh 2282.5, o retorno eh em ir, e a flutuacao 0.01
 		assertEquals(4082.5,ir,0.01);											
 	}
@@ -32,7 +32,7 @@ public class IrpfTeste {
 		Irpf irpf = new Irpf();
 		p1.setContriPrev(200);
 		p1.setTotalRend(12000);
-		ir = irpf.declaracaoSimplicada(p1);
+		ir = irpf.declaracaoSimplificada(p1);
 		System.out.println(ir);
 		assertEquals(0.0,ir,0.01);											
 	}
@@ -43,7 +43,7 @@ public class IrpfTeste {
 		Irpf irpf = new Irpf();
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		ir = irpf.declaracaoSimplicada(p1);
+		ir = irpf.declaracaoSimplificada(p1);
 		System.out.println(ir);
 		assertEquals(309.0,ir,0.01);											
 	}
