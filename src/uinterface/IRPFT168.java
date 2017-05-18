@@ -123,11 +123,11 @@ public class IRPFT168 extends JFrame {
 
 		JRadioButton rdbtnSim = new JRadioButton("Simplificada");
 		rdbtnSim.setSelected(true);
-		rdbtnSim.setBounds(50, 225, 114, 23);
+		rdbtnSim.setBounds(50, 238, 114, 23);
 		contentPane.add(rdbtnSim);
 
 		JRadioButton rdbtnCom = new JRadioButton("Completa");
-		rdbtnCom.setBounds(201, 225, 114, 23);
+		rdbtnCom.setBounds(201, 238, 114, 23);
 		contentPane.add(rdbtnCom);
 
 		// Agrupando os controles Radio
