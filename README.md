@@ -1,6 +1,7 @@
 # IRPFT168
 
 Um sistema é usado para o cadastramento de contribuintes (pessoas físicas) e cálculo do imposto de renda. 
+
 O cálculo pode ser feito visando a declaração completa ou a declaração simplificada. Os dados necessários para a 
 declaração completa são:
 
