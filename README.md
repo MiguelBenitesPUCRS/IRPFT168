@@ -27,13 +27,13 @@ O imposto a pagar é obtido a partir da base de cálculo:<br/>
 A base de cálculo é obtida descontando-se do total de rendimentos a contribuição previdenciária oficial.<br/>
 Em função da idade e do número de dependentes do contribuinte deve se aplicar um desconto sobre a base de cálculo.<br/>
 * Para contribuintes com menos de 65 anos o desconto é de:
- * 2% se o contribuinte tem até 2 dependentes
- * 3,5% se contribuinte tem entre 3 e 5 dependentes
- * 5% se o contribuinte tem mais de 5 dependentes
+  * 2% se o contribuinte tem até 2 dependentes
+  * 3,5% se contribuinte tem entre 3 e 5 dependentes
+  * 5% se o contribuinte tem mais de 5 dependentes
 * Para contribuintes com 65 anos ou mais o desconto é de:
- * 3% se o contribuinte tem até 2 dependentes
- * 4,5% se contribuinte tem entre 3 e 5 dependentes
- * 6% se o contribuinte tem mais de 5 dependentes
+  * 3% se o contribuinte tem até 2 dependentes
+  * 4,5% se contribuinte tem entre 3 e 5 dependentes
+  * 6% se o contribuinte tem mais de 5 dependentes
 
 ## O imposto a pagar é obtido a partir da base de cálculo:<br/>
 * Se a base de cálculo é de até R$ 12.000,00 então o contribuinte está isento (imposto a pagar zero).
