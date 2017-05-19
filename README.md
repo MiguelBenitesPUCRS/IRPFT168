@@ -15,7 +15,7 @@ declaração completa são:
 (2) Campos obrigatórios para os contribuintes que fazem declaração completa<br/>
 (3) Campos obrigatórios para permitir o cálculo do imposto (qualquer modalidade)<br/>
 
-Cálculo do imposto (decl. simplificada)<br/>
+## Cálculo do imposto (decl. simplificada)<br/>
 A base de cálculo é obtida descontando-se do total de rendimentos a contribuição previdenciária oficial.<br/>
 Aplica-se um desconto único de 5% sobre a base de cálculo.<br/>
 O imposto a pagar é obtido a partir da base de cálculo:<br/>
