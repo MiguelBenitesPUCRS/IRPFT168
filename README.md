@@ -41,3 +41,8 @@ Em função da idade e do número de dependentes do contribuinte deve se aplicar
 * Se a base de cálculo é de até R$ 12.000,00 então o contribuinte está isento (imposto a pagar zero).
 * Se a base de cálculo for maior que R$ 12.000,00 e inferior a R$ 24.000,00, então o imposto a pagar corresponde a 15% do valor da base de cálculo que excede o valor da faixa anterior.
 * Se a base de cálculo for maior ou igual a R$ 24.000,00, então o imposto a pagar é equivalente ao imposto devido na faixa anterior mais 27,5% do valor da base de cálculo que excede a faixa anterior.
+
+#### Instalar os pacotes:<br/>
+WindowBuilder (https://eclipse.org/windowbuilder/)<br/>
+Eclmma (Install como MarketPlace)<br/>
+ObjectAid UML (http://www.objectaid.com/home)<br/>
