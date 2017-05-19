@@ -6,16 +6,14 @@ O cálculo pode ser feito visando a declaração completa ou a declaração simp
 declaração completa são:
 
 Nome
+CPF
+Idade
 
-CPF*
+Número de dependentes
 
-Idade**
+Contribuição previdenciária oficial
 
-Número de dependentes**
-
-Contribuição previdenciária oficial***
-
-Total de rendimentos***
+Total de rendimentos
 
 Campos obrigatórios para todos os contribuintes
 
