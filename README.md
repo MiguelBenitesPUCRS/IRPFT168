@@ -1,17 +1,18 @@
 # IRPFT168
 
-m sistema é usado para o cadastramento de contribuintes (pessoas físicas) e cálculo do imposto de renda. 
+Um sistema é usado para o cadastramento de contribuintes (pessoas físicas) e cálculo do imposto de renda. 
 O cálculo pode ser feito visando a declaração completa ou a declaração simplificada. Os dados necessários para a 
 declaração completa são:
-• Nome*
-• CPF*
-• Idade**
-• Número de dependentes**
-• Contribuição previdenciária oficial***
-• Total de rendimentos***
-*Campos obrigatórios para todos os contribuintes
-**Campos obrigatórios para os contribuintes que fazem declaração completa
-***Campos obrigatórios para permitir o cálculo do imposto (qualquer modalidade)
+
+Nome*
+CPF*
+Idade**
+Número de dependentes**
+Contribuição previdenciária oficial***
+Total de rendimentos***
+Campos obrigatórios para todos os contribuintes
+Campos obrigatórios para os contribuintes que fazem declaração completa
+Campos obrigatórios para permitir o cálculo do imposto (qualquer modalidade)
 
 Cálculo do imposto (decl. simplificada)
 • A base de cálculo é obtida descontando-se do total de rendimentos a contribuição previdenciária oficial.
