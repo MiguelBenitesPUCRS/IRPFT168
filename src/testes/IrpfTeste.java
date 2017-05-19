@@ -55,9 +55,9 @@ public class IrpfTeste {
 	@Test
 	public void testaDeclaracaoCompletaNumDep2Menor65Anos(){
 		double ir;
+		p1.setNumDep(3);
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		p1.setNumDep(3);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(342.3,ir,0.01);											
 	}
@@ -65,9 +65,9 @@ public class IrpfTeste {
 	@Test
 	public void testaDeclaracaoCompletaNumDep6Menor65Anos(){
 		double ir;
+		p1.setNumDep(6);
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		p1.setNumDep(6);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(309.0,ir,0.01);											
 	}
@@ -76,9 +76,9 @@ public class IrpfTeste {
 	public void testaDeclaracaoCompletaNumDep2Maior65Anos(){
 		double ir;
 		p1.setIdade(65);
+		p1.setNumDep(2);
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		p1.setNumDep(2);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(353.4,ir,0.01);											
 	}
@@ -87,9 +87,9 @@ public class IrpfTeste {
 	public void testaDeclaracaoCompletaNumDep4Maior65Anos(){
 		double ir;
 		p1.setIdade(65);
+		p1.setNumDep(4);
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		p1.setNumDep(4);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(320.1,ir,0.01);											
 	}
@@ -98,9 +98,9 @@ public class IrpfTeste {
 	public void testaDeclaracaoCompletaNumDep6Maior65Anos(){
 		double ir;
 		p1.setIdade(65);
+		p1.setNumDep(6);
 		p1.setContriPrev(200);
 		p1.setTotalRend(15000);
-		p1.setNumDep(6);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(286.8,ir,0.01);	
 	}
@@ -109,11 +109,22 @@ public class IrpfTeste {
 	public void testaDeclaracaoCompletaNumDep6Maior65AnosBaseMenor(){
 		double ir;
 		p1.setIdade(65);
+		p1.setNumDep(6);
 		p1.setContriPrev(200);
 		p1.setTotalRend(12000);
-		p1.setNumDep(6);
 		ir = irpf.declaracaoCompleta(p1);
 		assertEquals(0.0,ir,0.01);	
+	}
+	
+	@Test
+	public void testaDeclaracaoSimplificadaRegraNegocio(){
+		double ir;
+		p1.setIdade(38);
+		p1.setNumDep(0);
+		p1.setContriPrev(1000);					// R$ 1.000 de contribuicao
+		p1.setTotalRend(39000);					// R$ 39.000,00 de total de rendimentos
+		ir = irpf.declaracaoSimplificada(p1);
+		assertEquals(5127.5,ir,0.01);			// R$ 5.127,5 de imposto
 	}
 	
 }
