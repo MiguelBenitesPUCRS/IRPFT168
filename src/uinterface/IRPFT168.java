@@ -63,7 +63,6 @@ public class IRPFT168 extends JFrame {
 	 */
 	public IRPFT168() {
 
-
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 368, 399);
 		setLocationRelativeTo(null); //centralizando formulario...

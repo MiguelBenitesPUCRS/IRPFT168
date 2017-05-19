@@ -1,7 +1,6 @@
 package business;
 
-public class facadeIrpf {
-	
+public class facadeIrpf {	
 	//Classe fachada que inicia as outras classes;
 	Irpf irpf;
 	Pessoa p;
