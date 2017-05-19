@@ -5,20 +5,18 @@ Um sistema é usado para o cadastramento de contribuintes (pessoas físicas) e c
 O cálculo pode ser feito visando a declaração completa ou a declaração simplificada. Os dados necessários para a 
 declaração completa são:
 
-Nome
-CPF
-Idade
+Nome<br/>
+CPF<br/>
+Idade<br/>
+Número de dependentes<br/>
+Contribuição previdenciária oficial<br/>
+Total de rendimentos<br/>
 
-Número de dependentes
 
-Contribuição previdenciária oficial
 
-Total de rendimentos
 
 Campos obrigatórios para todos os contribuintes
-
 Campos obrigatórios para os contribuintes que fazem declaração completa
-
 Campos obrigatórios para permitir o cálculo do imposto (qualquer modalidade)
 
 
