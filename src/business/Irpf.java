@@ -10,7 +10,7 @@ package business;
 //
 //
 //***
-//Exmplo IRPFT168 para Base de Calculo de R$ 36.100,00
+//Exemplo IRPFT168 para Base de Calculo de R$ 36.100,00
 //|-----------------------------------------------------|
 //                                           27,5%
 //                          15%       |-----------------|
@@ -32,7 +32,7 @@ public class Irpf {
 		baseCalculo = baseCalculo - vlrDesconto;
 		if (baseCalculo <= FAIXA_A) {
 			return 0.0;
-		} else if (baseCalculo > FAIXA_A && baseCalculo < FAIXA_B) {
+		} else if (baseCalculo > FAIXA_A && baseCalculo <= FAIXA_B) {
 			return (((baseCalculo - FAIXA_A) * 15.0) / 100);
 		} else {
 			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
@@ -77,7 +77,7 @@ public class Irpf {
 		}
 		if (baseCalculo <= FAIXA_A) {
 			return 0.0;
-		} else if (baseCalculo > FAIXA_A && baseCalculo < FAIXA_B) {
+		} else if (baseCalculo > FAIXA_A && baseCalculo <= FAIXA_B) {
 			return (((baseCalculo - FAIXA_A) * 15.0) / 100);
 		} else {
 			//primeira faixa Isento, segunda faixa 15%, terceira faixa 27,5%
