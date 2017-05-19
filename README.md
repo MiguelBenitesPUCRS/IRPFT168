@@ -19,6 +19,6 @@ declaração completa são:
 A base de cálculo é obtida descontando-se do total de rendimentos a contribuição previdenciária oficial.<br/>
 Aplica-se um desconto único de 5% sobre a base de cálculo.<br/>
 O imposto a pagar é obtido a partir da base de cálculo:<br/>
-Se a base de cálculo é de até R$ 12.000,00 então o contribuinte está isento (imposto a pagar zero).<br/>
-Se a base de cálculo for maior que R$ 12.000,00 e inferior a R$24.000,00, então o imposto a pagar corresponde a 15% do valor da base de cálculo que excede o valor da faixa anterior.<br/>
-Se a base de cálculo for maior ou igual a R$ 24.000,00, então o imposto a pagar é equivalente ao imposto devido na faixa anterior mais 27,5% do valor da base de cálculo que excede a faixa anterior.<br/>
+* Se a base de cálculo é de até R$ 12.000,00 então o contribuinte está isento (imposto a pagar zero).<br/>
+* Se a base de cálculo for maior que R$ 12.000,00 e inferior a R$24.000,00, então o imposto a pagar corresponde a 15% do valor da base de cálculo que excede o valor da faixa anterior.<br/>
+* Se a base de cálculo for maior ou igual a R$ 24.000,00, então o imposto a pagar é equivalente ao imposto devido na faixa anterior mais 27,5% do valor da base de cálculo que excede a faixa anterior.<br/>
