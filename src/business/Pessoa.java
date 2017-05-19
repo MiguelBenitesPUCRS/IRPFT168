@@ -2,12 +2,12 @@ package business;
 
 public class Pessoa {
 	
-	String nome;
-	String cpf;
-	int idade;
-	int numDep;
-	double contriPrev;
-	double totalRend;
+	private String nome;
+	private String cpf;
+	private int idade;
+	private int numDep;
+	private double contriPrev;
+	private double totalRend;
 	
 	public Pessoa(String nome, String cpf, int idade) {
 		this.nome = nome;

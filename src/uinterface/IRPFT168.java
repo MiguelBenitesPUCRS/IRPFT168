@@ -168,25 +168,23 @@ public class IRPFT168 extends JFrame {
 					JOptionPane.showMessageDialog(IRPFT168.this,"Necessario informar a IDADE do contribuinte.", "Idade", JOptionPane.INFORMATION_MESSAGE);
 					textIdade.requestFocus();
 				} else {
+					//Carrega as variaveis...
 					String nome = textNome.getText();
 					String cpf = textCPF.getText();
 					int idade = Integer.parseInt(textIdade.getText());
 					int dependentes = (int) spiDependentes.getValue();
 					double contribuicao = (double) txtContribuicao.getValue();
 					double totalrendimentos = (double) txtTotalRendimentos.getValue();
-
-					pessoa = new Pessoa(nome, cpf, idade);
-					pessoa.setContriPrev(contribuicao);
-					pessoa.setTotalRend(totalrendimentos);
-					pessoa.setNumDep(dependentes);
+					
+					facade = new facadeIrpf();
 
 					if (rdbtnSim.isSelected()) {
-						facade = new facadeIrpf();
-						double retorno = facade.calculaImpostoSimplificado(pessoa);	
+						facade.recebePessoa(nome, cpf, idade, dependentes, contribuicao, totalrendimentos);
+						double retorno = facade.calculaImpostoSimplificado();	
 						txtImpostoAPagar.setText(Double.toString(retorno));				
 					}else{
-						facade = new facadeIrpf();
-						double retorno = facade.calculaImpostoCompleto(pessoa);
+						facade.recebePessoa(nome, cpf, idade, dependentes, contribuicao, totalrendimentos);
+						double retorno = facade.calculaImpostoCompleto();
 						txtImpostoAPagar.setText(Double.toString(retorno));
 					}		
 				}
