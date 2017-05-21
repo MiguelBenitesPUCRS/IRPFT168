@@ -15,7 +15,7 @@ import javax.swing.text.MaskFormatter;
 
 import business.Irpf;
 import business.Pessoa;
-import business.facadeIrpf;
+import business.FacadeIrpf;
 
 import javax.swing.JTextField;
 import javax.swing.JSpinner;
@@ -37,7 +37,7 @@ public class IRPFT168 extends JFrame {
 	private JTextField textNome;
 	private JTextField textCPF;
 	private JTextField textIdade;
-	private facadeIrpf facade;
+	private FacadeIrpf facade;
 	private Pessoa pessoa;
 
 	/**
@@ -175,7 +175,7 @@ public class IRPFT168 extends JFrame {
 					double contribuicao = (double) txtContribuicao.getValue();
 					double totalrendimentos = (double) txtTotalRendimentos.getValue();
 					
-					facade = new facadeIrpf();
+					facade = new FacadeIrpf();
 
 					if (rdbtnSim.isSelected()) {
 						facade.recebePessoa(nome, cpf, idade, dependentes, contribuicao, totalrendimentos);

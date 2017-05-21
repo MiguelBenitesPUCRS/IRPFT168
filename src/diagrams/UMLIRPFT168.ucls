@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.0" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="business.facadeIrpf" project="IRPFT168" 
-    file="/IRPFT168/src/business/facadeIrpf.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="business.FacadeIrpf" project="IRPFT168" 
+    file="/IRPFT168/src/business/FacadeIrpf.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="142" width="297" x="633" y="39"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,16 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="testes.IrpfDrive" project="IRPFT168" file="/IRPFT168/src/testes/IrpfDrive.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="105" width="141" x="1090" y="255"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="testes.IrpfTeste" project="IRPFT168" file="/IRPFT168/src/testes/IrpfTeste.java" 
+  <class id="4" language="java" name="testes.IrpfTeste" project="IRPFT168" file="/IRPFT168/src/testes/IrpfTeste.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="303" width="361" x="903" y="611"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +37,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="testes.PessoaTeste" project="IRPFT168" 
+  <class id="5" language="java" name="testes.PessoaTeste" project="IRPFT168" 
     file="/IRPFT168/src/testes/PessoaTeste.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="303" width="173" x="240" y="560"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,9 +46,18 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="uinterface.IRPFT168" project="IRPFT168" 
+  <class id="6" language="java" name="uinterface.IRPFT168" project="IRPFT168" 
     file="/IRPFT168/src/uinterface/IRPFT168.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="176" width="144" x="232" y="49"/>    
+    <position height="176" width="144" x="232" y="21"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="testes.IrpfTestDriver" project="IRPFT168" 
+    file="/IRPFT168/src/testes/IrpfTestDriver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="125" width="150" x="1115" y="432"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,20 +65,20 @@
     </display>  
   </class>  
   <association id="8">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="9" name="p">        
-        <position height="0" width="0" x="-213" y="0"/>      
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="9" name="irpf">        
+        <position height="0" width="0" x="306" y="11"/>      
       </attribute>      
       <multiplicity id="10" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-213" y="0"/>      
+        <position height="0" width="0" x="306" y="11"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="11">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="12" name="p1">        
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="12" name="pessoa">        
         <position height="0" width="0" x="-213" y="0"/>      
       </attribute>      
       <multiplicity id="13" minimum="0" maximum="1">        
@@ -89,44 +89,40 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="14">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="15" name="facade">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="16" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="17">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="18" name="irpf">        
-        <position height="0" width="0" x="306" y="11"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="306" y="11"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="21" name="pessoa">        
+      <attribute id="15" name="pessoa">        
         <position height="0" width="0" x="-213" y="0"/>      
       </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1">        
+      <multiplicity id="16" minimum="0" maximum="1">        
         <position height="0" width="0" x="-213" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="18" name="p">        
+        <position height="0" width="0" x="-213" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-213" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="21" name="irpf"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="23">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="24" name="pessoa">        
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="24" name="p1">        
         <position height="0" width="0" x="-213" y="0"/>      
       </attribute>      
       <multiplicity id="25" minimum="0" maximum="1">        
@@ -137,7 +133,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="26">    
-    <end type="SOURCE" refId="4" navigable="false">      
+    <end type="SOURCE" refId="1" navigable="false">      
       <attribute id="27" name="irpf">        
         <position height="0" width="0" x="306" y="11"/>      
       </attribute>      
@@ -149,15 +145,15 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="29">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="30" name="irpf">        
-        <position height="0" width="0" x="306" y="11"/>      
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="30" name="facade">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="31" minimum="0" maximum="1">        
-        <position height="0" width="0" x="306" y="11"/>      
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

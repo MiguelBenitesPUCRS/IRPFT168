@@ -1,11 +1,11 @@
 package business;
 
-public class facadeIrpf {	
+public class FacadeIrpf {	
 	//Classe fachada que inicia as outras classes;
 	Irpf irpf;
 	Pessoa p;
 	
-	public facadeIrpf() {
+	public FacadeIrpf() {
 		irpf = new Irpf();
 	}
 		
@@ -23,5 +23,9 @@ public class facadeIrpf {
 		p.setNumDep(nDep);
 		p.setContriPrev(contribuicao);
 		p.setTotalRend(totalRendimentos);
+	}
+	
+	public Pessoa getPessoa(){
+		return p;
 	}
 }

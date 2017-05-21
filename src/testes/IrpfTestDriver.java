@@ -3,7 +3,7 @@ package testes;
 import business.Irpf;
 import business.Pessoa;
 
-public class IrpfDrive {
+public class IrpfTestDriver {
 
 	static Irpf irpf;
 	
